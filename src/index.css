@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&display=swap');
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-earth-50: #fdfcf9;
+  --color-earth-100: #f5f2ed;
+  --color-earth-200: #e6dfd1;
+  --color-earth-300: #d4c7b3;
+  --color-earth-400: #b8a38a;
+  --color-earth-500: #9c8366;
+  --color-earth-600: #7d6851;
+  --color-earth-700: #5e4e3d;
+  --color-earth-800: #40352a;
+  --color-earth-900: #241d17;
+  
+  --color-nature-50: #f7f9f5;
+  --color-nature-100: #edf2ea;
+  --color-nature-200: #d6e2d1;
+  --color-nature-300: #b9ccb3;
+  --color-nature-400: #93ad8a;
+  --color-nature-500: #718d66;
+  --color-nature-600: #58704f;
+  --color-nature-700: #44563d;
+  --color-nature-800: #323f2d;
+  --color-nature-900: #222b1f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-earth-100 text-earth-900 font-sans;
+}
+
+h1, h2, h3, h4, .serif {
+  @apply font-serif;
+}
+
+.natural-texture {
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-earth-200;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-earth-400 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-earth-500;
+}
